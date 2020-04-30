@@ -19,7 +19,7 @@ decorators: decorator+
 decorated: decorators (classdef | funcdef | async_funcdef)
 
 async_funcdef: ASYNC funcdef
-funcdef: 'def' NAME parameters ['->' test] ':' [TYPE_COMMENT] func_body_suite
+funcdef: 'fn' test NAME parameters ':python3' [TYPE_COMMENT] func_body_suite
 
 parameters: '(' [typedargslist] ')'
 
